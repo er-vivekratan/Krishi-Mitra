@@ -1,0 +1,40 @@
+<body>
+
+<div id="color">
+    <input value="Month" id="months"></button>
+</div>
+
+</body>
+<style>
+
+div[id="color"]{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+}
+
+</style>
+<script>
+
+let now = new Date();
+let month = now.getMonth();
+console.log(month);
+document.getElementById('months').value = month;
+
+//1-4 AACC00
+if (month == ){
+    document.getElementById('color').style.background = '#55A630';
+}
+//5-7 FFFF3F
+else if (month == 6){
+    document.getElementById('color').style.background = 'FFFF3F';
+}
+//8-10 80B918
+else if(month == 8){
+    document.getElementById('color').style.background = '#80B918'
+}
+//11 and 12 55A630
+
+</script>
+
+<!---->
