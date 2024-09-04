@@ -136,7 +136,7 @@
             </div>
         </section>
 
-        <div class="product-gallery">
+        <!--div class="product-gallery">
             <div class="card">
                 <img src="https://thumbs.dreamstime.com/b/corn-fields-corn-farm-tree-32576148.jpg">
                 <div class="name">
@@ -217,8 +217,53 @@
                     <input type="button" class="add-to-cart" value="Add to Cart">
                 </div>
             </div> 
-        </div>
+        </div-->
+
+
+        <footer>
+            <div class="footer-container">
+              <div class="footer-section about">
+                <h2>FarmConnect</h2>
+                <p>Connecting Farmers to Markets</p>
+                <p>Bringing Fair Trade and Opportunities to Farmers Worldwide.</p>
+              </div>
+          
+              <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Marketplace</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Styles</a></li>
+                  <li><a href="#">FAQs</a></li>
+                </ul>
+              </div>
+          
+              <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p>Email: support@farmconnect.com</p>
+                <p>Phone: +91 12345 67890</p>
+                <p>Address: 123 Green Fields, AgroCity, India</p>
+              </div>
+          
+              <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+          
+            <div class="footer-bottom">
+              <p>&copy; 2024 FarmConnect. All Rights Reserved.</p>
+            </div>
+          </footer>
+
+
     </div>
+
+    
 
 
 <style>
@@ -697,6 +742,89 @@ input[class="add-to-cart"]{
     opacity: 1;
     background-color: none;
     visibility: visible;
+}
+
+
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    margin-bottom: -100px;
+    position: relative;
+    color: #fff;
+}
+
+/*footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}*/
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #fff;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 10px;
+  min-width: 200px;
+}
+
+.footer-section h2, .footer-section h3 {
+  color: #ffc107;
+  margin-bottom: 15px;
+}
+
+.footer-section p {
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #ffc107;
+}
+
+.footer-section .social a {
+  color: #fff;
+  margin-right: 15px;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.footer-section .social a:hover {
+  color: #ffc107;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px;
+  border-top: 1px solid #444;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
 }
 
 
