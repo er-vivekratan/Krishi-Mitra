@@ -1,0 +1,596 @@
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars" class="menubtn"></i>
+            Menu
+        </label>
+        <img style ="height: 80%; margin: 0.7% 0 0 1%;" src="https://raw.githubusercontent.com/er-vivekratan/Project-A2L/main/Krishi%20Mitra%20Logo%20T.png">
+        <!--label class="logo">Krishi Mitra</label-->
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a class="active" href="Store.html">Store</a></li>
+            <li><a href="News.html">News</a></li>
+            <li><a href="Chatbot.html">Chatbot</a></li>
+            <!--li><a href="Tools.html">Tools</a></li-->
+            <li><a href="About.html">About</a></li>
+            <li><a id="logout" href="Krishak-Login.html">Logout</a></li>
+        </ul>
+    </nav>
+    <div class="page"><br>
+        <!--div class="head">
+            <form>
+                <input type="search" id="search">
+                <input type="submit" value="Go" id="searchbut">
+            </form>
+                <select id="filter">
+                    <option value="Filter">Filter</option>
+                    <option value="By Name">By Name</option>
+                    <option value="By Price">By Price</option>
+                    <option value="By Distance">By Distance</option>
+                    <option value="By Age">By Age</option>
+                </select>
+            </form>
+        </div-->
+        <div class="pannel">
+        <br>            
+        <div id="Range Slider">
+            <label for="Price Range">Price Range</label>
+        <br><br>
+            <input type="range" id="min-range" class="slider">
+            <span>
+                <input type="range" id="max-range" class="slider">
+            </span>            
+        <br>
+            <span id="min-value"></span>
+            <label id="to">-</label>
+            <span id="max-value"></span>
+        </div>
+        <br>
+            <label for="state" style="font-weight: bold; margin-top: 70px; position: absolute;">Search Result For</label>
+            <select id="state" style="position: relative; margin-top: 90px; padding: 10px; outline: none; font-family: Cambria Math; font-size: 18;">
+                    <option value="select">India</option>
+                    <option value="andhra_pradesh">Andhra Pradesh</option>
+                    <option value="gujarat">Gujarat</option>
+                    <option value="karnataka">Karnataka</option>
+                    <option value="maharashtra">Maharashtra</option>
+                    <option value="punjab">Punjab</option>
+                    <option value="rajasthan">Rajasthan</option>
+                    <option value="uttar_pradesh">Uttar Pradesh</option>
+                    <option value="west_bengal">West Bengal</option>
+            </select>
+            <select id="shortby" style="position: relative; margin-top: 80px;">
+                <option value="Short By">Short By</option>
+                <option value="By Name">Name</option>
+                <option value="By Price">Price</option>
+                <option value="By Distance">Distance</option>
+                <option value="By Age">Age</option>
+            </select>
+
+            <label for="cropcategory">Crop Category</label>
+            <button id="CAT11" class="CAT" for="active">Wheat</button>
+            <button id="CAT12" class="CAT">Milets</button>
+            <button id="CAT13" class="CAT">corn</button>
+            <button id="CAT14" class="CAT">apple</button>
+            <button id="CAT15" class="CAT">SugarCane</button>
+            <button id="CAT16" class="CAT">oat</button>
+        </div>
+        <div class="product-gallery">
+            <div class="card">
+                <img src="https://thumbs.dreamstime.com/b/corn-fields-corn-farm-tree-32576148.jpg">
+                <div class="name">
+                    <h1>Corn</h1>
+                    <h2>₹ 60.00 per KG</h2><br>
+                    <input type="button" class="add-to-cart" value="Add to Cart">
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP.c1ksQx0009VG8K_XSJC1dwHaLG?rs=1&pid=ImgDetMain.png">
+                <div class="name">
+                    <h1>SugarCane</h1>
+                    <h2>₹ 60.00 per KG</h2><br>
+                    <input type="button" class="add-to-cart" value="Add to Cart">
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP.mH41xEUUSE6rInMby6uhjgHaE8?w=250&h=180&c=7&r=0&o=5&pid=1.7.jpg">
+                <div class="name">
+                    <h1>Wheat</h1>
+                    <h2>₹ 15.00 per KG</h2><br>
+                    <input type="button" class="add-to-cart" value="Add to Cart">
+                </div>
+            </div>
+            <div class="card">
+                <img src="C:\Users\VIVEK\Downloads\New folder\PS11.jpg">
+                <div class="name">
+                    <h1>Tomato</h1>
+                    <h2>₹ 25.00 per KG</h2><br>
+                    <input type="button" class="add-to-cart" value="Add to Cart">
+                </div>
+            </div>
+            <div class="card">
+                <img src="C:\Users\VIVEK\Downloads\New folder\PS12.jpg">
+                <div class="name">
+                    <h1>SugarCane</h1>
+                    <h2>₹ 60.00 per KG</h2><br>
+                    <input type="button" class="add-to-cart" value="Add to Cart">
+                </div>
+            </div>
+            <div class="card">
+                <img src="C:\Users\VIVEK\Downloads\New folder\PS13.jpg">
+                <div class="name">
+                    <h1>Wheat</h1>
+                    <h2>₹ 15.00 per KG</h2><br>
+                    <input type="button" class="add-to-cart" value="Add to Cart">
+                </div>
+            </div>
+            <div class="card">
+                <img src="C:\Users\VIVEK\Downloads\New folder\PS14.jpg">
+                <div class="name">
+                    <h1>Corn</h1>
+                    <h2>₹ 25.00 per KG</h2><br>
+                    <input type="button" class="add-to-cart" value="Add to Cart">
+                </div>
+            </div>
+            <div class="card">
+                <img src="C:\Users\VIVEK\Downloads\New folder\PS15.jpg">
+                <div class="name">
+                    <h1>SugarCane</h1>
+                    <h2>₹ 60.00 per KG</h2><br>
+                    <input type="button" class="add-to-cart" value="Add to Cart">
+                </div>
+            </div>
+            <div class="card">
+                <img src="C:\Users\VIVEK\Downloads\New folder\PS16.jpg">
+                <div class="name">
+                    <h1>Wheat</h1>
+                    <h2>₹ 15.00 per KG</h2><br>
+                    <input type="button" class="add-to-cart" value="Add to Cart">
+                </div>
+            </div>
+            <div class="card">
+                <img src="C:\Users\VIVEK\Downloads\New folder\PS17.jpg">
+                <div class="name">
+                    <h1>Corn</h1>
+                    <h2>₹ 25.00 per KG</h2><br>
+                    <input type="button" class="add-to-cart" value="Add to Cart">
+                </div>
+            </div>
+            <div class="card">
+                <img src="C:\Users\VIVEK\Downloads\New folder\PS18.jpg">
+                <div class="name">
+                    <h1>Corn</h1>
+                    <h2>₹ 25.00 per KG</h2><br>
+                    <input type="button" class="add-to-cart" value="Add to Cart">
+                </div>
+            </div> 
+            <div class="card">
+                <img src="C:\Users\VIVEK\Downloads\New folder\PS11.jpg">
+                <div class="name">
+                    <h1>Corn</h1>
+                    <h2>₹ 25.00 per KG</h2><br>
+                    <input type="button" class="add-to-cart" value="Add to Cart">
+                </div>
+            </div> 
+        </div>
+    </div>
+    <footer>
+        jahfj
+    </footer>
+<style>
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: Cambria Math;
+    background-color: #f7f7f750;
+}
+nav{
+    background: #4CAF50;
+    height: 95px;
+    width: 100%;
+}
+input[id="check"]{
+    float: right;
+    line-height: 95px;
+    margin-right: 20px;
+    display: none;
+}
+.checkbtn{
+    font-size: 18px;
+    color: #fff;
+    float: right;
+    line-height: 95px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 17px;
+    }
+}
+@media (max-width: 858px){
+    label[class="logo"]{
+        font-size: 14;
+    }
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #4CAF50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 17px;
+    }
+    a:hover, a.active{
+        background: #007F5F;
+        color: #fff;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    a[class="active"]{
+        background-color: none;
+        color: #fff;
+    }
+    .check:checked ~ ul{
+        display: hidden;
+        background-color: #fff;
+    }
+}
+label[class="logo"]{
+    color: #fff;
+    font-size: 35px;
+    line-height: 95px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 95px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active,a:hover{
+    background: #007F5F;
+    transition: 0.5s;
+}
+#check:checked ~ nav ul{
+    left: 0;
+    display: hidden;
+    background-color: #fff;
+}
+a[id="logout"]{
+    border: none;
+    background-color: rgb(161, 22, 22);
+    color: #ffffff;
+    margin-right: -20px;
+}
+
+
+div[class="page"]{
+    height: calc(100vh - 80px);
+    /*background-image: linear-gradient(to bottom, #59d65f, #80da84, #a6d6a9, #fff, #fff, #fff, #fff, #fff, #fff, #fff, #fff, #fff, #fff, #fff);*/
+    background-size: cover;
+}
+div[class="head"]{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    margin-top: -15px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    padding: 0 20px 0 20px;
+}
+input[id="search"]{
+    height: 100%;
+    width: 70%;
+    float: left;
+    position: relative;
+    max-width: 600px;
+    padding: 0 70px 0 20px;
+    font-size: 21;
+}
+input[id="searchbut"]{
+    height: 100%;
+    width: 10%;
+    max-width: 20px;
+    margin-left: -5%;
+    background-color: transparent;
+    border: none;
+    cursor: hand;
+    float: left;
+    position: relative;
+    border-left: 0.5px solid black;
+}
+select[id="shortby"]{
+    height: 40px;
+    width: 200px;
+    float: right;
+    font-family: Cambria Math;
+    font-size: 16;
+    padding-left: 20px;
+    margin-bottom: 40px;
+    
+}
+input[type="range"]{
+    width: 80%;
+    float: left;
+    position: relative;
+    height: 40px;
+    width: 110%;
+    margin-bottom: 15px;
+    position: relative;
+}
+select[id="state"]{
+    height: 40px;
+    width: 200px;
+}
+
+div[class="pannel"]{
+    height: 800px;
+    width: 300px;
+    padding: 50px;
+    float: left;
+    margin-left: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #f7f7f79f;
+    
+/*    box-shadow: 5px 10px 15px 2px rgba(0, 0, 0, 0.75);*/
+}
+label[for="cropcategory"]{
+    font-size: 20;
+    font-family: Arial Rounded MT;
+    margin-top: 30px;
+    position: relative;
+}
+button[class="CAT"]{
+    height: 50px;
+    width: 110%;
+    float: right;
+    margin-top: 5px;
+    background-color: transparent;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    font-size: 18;
+    font-family: Cambria Math;
+    text-transform: capitalize;
+    cursor: hand;
+}
+button[for="active"]{
+    height: 50px;
+    width: 110%;
+    float: right;
+    margin-top: 5px;
+    background-color: #fff;
+    border: none;
+}
+
+div[class="product-gallery"]{
+    height: 800px;
+    width: auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 40px;
+    justify-content: center;
+    overflow-y: scroll;
+}
+div[class="card"]{
+    position: relative;
+    height: 250px;
+    width: 175px;
+    margin: 20px;
+}
+img{
+    height: 250px;
+    width: 175px;
+    border-radius: 3px;
+}
+div[class="name"]{
+    height: 50px;
+    width: 175px;
+    padding: 3px;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 50px;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 0 1px 1px 1px solid rgb(0, 0, 0);
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+h1{
+    margin: 1px 0 0 2.5;
+    font-size: 24px;
+    position: relative;
+    font-family: Arial Rounded MT;
+}
+h2{
+    font-size: 16;
+    margin: 26px 0 0 0;
+    position: relative;
+    font-weight: lighter;
+    font-family: Cambria Math;
+    visibility: hidden;
+}
+input[class="add-to-cart"]{
+    background-color: #fff;
+    padding: 3px;
+    font-family: Microsoft Sans Serif;
+}
+/*p{
+    font-size: 20;
+    visibility: hiddedn;
+    opacity: s0;
+    position: relative;
+    font-family: Cambria Math;
+    background-color: blue;
+}*/
+span{
+    font-weight: bold;
+}
+div[class="card"]:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 12.5px 5px rgba(0, 0, 0, 0.75);
+    transition: 1s;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.card:hover .name{
+    position: absolute;
+    height: 120px;
+    bottom: 1px;
+    background: rgba(255, 255, 255);
+    transition: 0.7s;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.card:hover p{
+    opacity: 1;
+    visibility: visible;
+    background-color: green;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.card:hover img{
+    /*transform: scale(1.1) rotate(0deg);*/
+    transition: 0.7s;
+    opacity: 0.5;
+}
+.card:hover h2{
+    visibility: visible;
+}
+input[class="add-to-cart"]{
+    height: 40px;
+    margin: -170px 0 0 0;
+    visibility: hidden;
+    border: none;
+    cursor: hand;
+    opacity: 0;
+}
+.card:hover input[class="add-to-cart"]{
+    visibility: visible;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    transition: 0.7s;
+    opacity: 1;
+    background-color: none;
+    visibility: visible;
+}
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+    margin-top: 20%;
+    margin-bottom: -100px;
+    position: absolute;
+}
+
+</style>
+
+<script>
+
+
+</script>
+
+<style>
+    div[id="Range Slider"]{
+        padding: 2rem;
+        background-color: #ffffff;
+        margin: 20px 0 0 -60px;
+        width: 300px;
+        max-width: 600px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    label[for="Price Range"]{
+        font-size: 30;
+    }
+    input[id="min-range"], input[id="max-range"]{
+        -webkit-appearance: none;
+        appearance: none;
+        width: 50%;
+        height: 10px;
+        max-width: 49%;
+        background-color: #dedede;
+        margin: 0;
+        padding: 0;
+        outline: none;
+        float: left;
+    }
+    .range::-webkit-slider-thumb{
+        background-color: ;
+    }
+    .range::-moz-range-thumb{
+        cursor: hand;
+    }
+</style>
+
+<script>
+    
+    var minRange = document.getElementById('min-range');
+    var maxRange = document.getElementById('max-range');
+    var outputMin = document.getElementById('min-value');
+    var outputMax = document.getElementById('max-value');
+    
+    outputMin.innerHTML = minRange.value;
+    outputMax.innerHTML = maxRange.value;
+    
+    minRange.oninput = function(){
+        outputMin.innerHTML = this.value *1+50;
+    }
+    maxRange.oninput = function(){
+        outputMax.innerHTML = this.value *1+150;
+    }
+    
+</script>
+
+
+</body>

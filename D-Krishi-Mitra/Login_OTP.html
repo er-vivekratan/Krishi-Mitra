@@ -1,0 +1,182 @@
+<div class="wrapper">
+    <img style ="height: 50px; margin-top: 10px;" src="https://raw.githubusercontent.com/er-vivekratan/Project-A2L/main/Krishi%20Mitra%20Logo%20T.png">
+    <div class="title">
+        <h1>Sign In</h1>
+    </div>
+    <div class="form-wrapper sign-in">
+        <form action="">
+            <div class="input-group">
+                <label for="createaccount">Enter OTP</label><br>
+                <input type="number" id="child-1" required maxlength="1" selected="selected">
+                <input type="number" id="child-2" required maxlength="1">
+                <input type="number" id="child-3" required maxlength="1">
+                <input type="number" id="child-4" required maxlength="1">
+                <input type="number" id="child-5" required maxlength="1">
+                <input type="number" id="child-6" required maxlength="1">
+            <br>
+            <div id="oso">
+                <a href="Home.html" style="text-decoration: none; font-size: 12;">Under Maintainace, Login Here</a>
+                <input type="submit" value="verify">
+                </button>
+            </div>
+            </div>
+        </form>
+    </div>
+</div>
+    
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: rgb(240, 232, 232);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    position: relative;
+    width: 430px;
+    height: 300px;
+    padding: 5px 30px 20px 30px;
+    margin: 20px;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 20px 5px #888888;
+}
+.form-wrapper{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+div[class="title"]{
+    position: relative;
+    height: 70px;
+    width: 100%;
+    display: grid;
+    justify-content: left;
+}
+h1{
+    text-align: center;
+    font-family: Arial Rounded MT;
+    position: relative;
+    float: left;
+    height: 40px;
+    width: auto;
+    margin-top: 25px;
+}
+.input-group{
+    height: 80%;
+    padding-top: 10px;
+    position: relative;
+}
+.input-group label{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 16px;
+    background-color: #fff;
+    pointer-events: none;
+    cursor: pointer;
+    transition: 0.2s;
+    color: grey;
+    font-family: Cambria Math;
+}
+label[for="createaccount"]{
+    position: relative;
+    margin-left: -10px;
+    font-size: 19;
+}
+input[type="number"]{
+    font-size: 16;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    padding: 0 10px 0 10px;
+    font-family: Cambria Math;
+    margin: 20px 8px 0 0;
+
+    -moz-appearance: textfield;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    padding: 1px;
+    display: none;
+}
+label[for="tel"]{
+    margin-top: 18%;
+    font-size: 18;
+    left: 75;
+}
+.input-group input:focus{
+    outline: 10px rgb(76, 175, 80);
+}
+div[id="oso"]{
+    height: 50px;
+    width: 100%;
+    margin: 18px 0 0 0;
+    float: left;
+}
+input[type="submit"]{
+    position: relative;
+    width: 140px;
+    height: 40px;
+    border: none;
+    color: #fff;
+    background-color: rgb(76, 175, 80);
+    border-radius: 15px;
+    font-size: 21;
+    cursor: hand;
+    float: right;
+    margin: -1px;
+    margin-right: -20px;
+}
+
+</style>
+
+<script>
+
+document.querySelectorAll('input[type="number"]').forEach(input =>{
+    input.oninput = () =>{
+        if(input.value.length > input.maxLength) input.value = input.value.slice(0, input.maxLength);
+    };
+})
+
+var myopt = document.querySelectorAll('input[type="number"]');
+for (var i = 0; i < myopt.length - 1; i++){
+    myopt[i].addEventListener("keyup", function() {
+        this.nextElementSibling.focus();
+    })
+}
+
+function getOTP(){
+    let value = '0123456789';
+    let newOTP = Math.floor(Math.random()*1000000);
+    document.getElementById('otp').value = newOTP;
+}
+
+
+//const name = document.getElementById('username');
+
+
+window.onload = (event) => {
+    function getOTP(){
+        let value = '0123456789';
+        let newOTP = Math.floor(Math.random()*1000000);
+        document.getElementById('child-1').value = newOTP;
+}
+
+};
+
+
+</script>
+</body>
